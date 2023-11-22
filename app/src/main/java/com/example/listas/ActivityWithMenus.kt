@@ -79,8 +79,15 @@ open class ActivityWithMenus: AppCompatActivity() {
 
             R.id.buscar -> {
                 val filtro = findViewById<EditText>(R.id.filtro)
-                filtro.visibility = View.VISIBLE
                 val search = filtro.text.toString()
+
+                if(filtro.visibility == View.INVISIBLE){
+                        filtro.visibility = View.VISIBLE
+                    }
+                else{
+                    filtro.visibility = View.INVISIBLE
+                }
+
 
                 Toast.makeText(applicationContext, "Búsqueda realizada: $search", Toast.LENGTH_SHORT).show()
 
