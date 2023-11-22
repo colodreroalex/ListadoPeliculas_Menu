@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/peliculas"
+        android:title="Peliculas" />
+    <item
+        android:id="@+id/editarpeli"
+        android:title="Editar Pelicula" />
+    <item
+        android:id="@+id/app"
+        android:title="App" />
+
+    <item
+        android:id="@+id/salir"
+        android:title="Salir"
+        android:icon="@drawable/salir_icon"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/buscar"
+        android:title="Buscar"
+        android:icon="@drawable/buscar"
+        app:showAsAction="ifRoom"
+        />
+
+</menu>
